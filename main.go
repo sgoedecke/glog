@@ -37,7 +37,7 @@ func main() {
 	}
 	log.Print("Executing on " + hostname)
 
-	datePath := time.Now().Format("2006/01/02")
+	datePath := time.Now().UTC().Format("2006/01/02")
 
 	searchGlob := os.Args[2]
 	searchKey := os.Args[3]
